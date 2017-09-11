@@ -24,7 +24,7 @@ class JeepneyTrip {
      }
    }
 
-  double computeFare(int totalPassengers, double fare, double distance) 
+  double computeFare(int totalPassengers, double fare, double distance) {
      return totalPassengers * (fare + (excessDistance(distance) * EXCESS_FARE)) ;
    }
 
