@@ -14,6 +14,10 @@ class JeepneyTrip {
   }
   
   double fareChange(double payment) {
-    return 0;
+    if (BASE_KM > 5) {
+      return payment - BASE_KM;
+    } else {   
+      return 0;
+    }
   }
 }
