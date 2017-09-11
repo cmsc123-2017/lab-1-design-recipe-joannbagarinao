@@ -33,7 +33,7 @@ class JeepneyTrip {
           + computeFare(discountPassengers, DISCOUNTED_FARE, distance);
    }
 
-   double fareChange(double payment, int totalPassengers, int discountPassengers, double distance) {
+   double fareChange(double payment) {
       return payment - totalFare(totalPassengers, discountPassengers, distance);
    } 
 }
