@@ -14,8 +14,25 @@ class JeepneyTrip {
   }
   
   double fareChange(double payment) {
-    if (BASE_KM > 5) {
-      return payment - BASE_KM;
+    if (distance = BASE_KM &&
+        totalPassengers = 1 &&
+        discountPassengers = 0) {   
+      return payment - 7;
+    } else
+        if (distance = BASE_KM &&
+            totalPassengers = 1 &&
+            discountPassengers = 1) {   
+      return payment - 6;
+    } else 
+       if (distance = BASE_KM &&
+           totalPassengers > 1 &&
+           discountPassengers = 0) {   
+      return payment - (7 × totalPassengers);
+    } else
+       if (distance = BASE_KM &&
+           totalPassengers > 1 &&
+           discountPassengers = 1) {   
+      return payment - (6 × totalPassengers);
     } else {   
       return 0;
     }
