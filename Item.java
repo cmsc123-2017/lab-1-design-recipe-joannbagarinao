@@ -7,7 +7,7 @@ class Item {
     this.saale = sale;
   }
   
-  final int SALE_LIMIT 1000
+  final int SALE_LIMIT 1000;
 
   double computeSalePrice(double price, double sale) {
     return price - (sale * price);
